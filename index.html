@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Big Sis 💗</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #5a3155;
+
+    background:
+        radial-gradient(circle at 10% 10%, #ffd1e5, transparent 30%),
+        radial-gradient(circle at 90% 20%, #dec9ff, transparent 30%),
+        radial-gradient(circle at 50% 100%, #ffe0ef, transparent 35%),
+        linear-gradient(135deg, #fff7fb, #f5efff);
+}
+
+/* OPENING */
+
+#opening {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at center, #ffd4e7, #c5a4ff);
+
+    transition: 1s ease;
+}
+
+.open-content {
+    padding: 25px;
+    color: white;
+}
+
+.gift {
+    font-size: 90px;
+    animation: gift 1.5s infinite;
+}
+
+@keyframes gift {
+    0%,100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+.open-content h1 {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: clamp(30px, 8vw, 42px);
+}
+
+.open-content p {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.open-btn {
+    margin-top: 25px;
+    padding: 16px 30px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: white;
+    color: #c34f8c;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 12px 30px rgba(80,40,100,.25);
+
+    transition: .3s;
+}
+
+.open-btn:hover {
+    transform: scale(1.08);
+}
+
+
+/* FLOATING DECORATIONS */
+
+.floating {
+    position: fixed;
+    bottom: -60px;
+    z-index: 1;
+
+    pointer-events: none;
+
+    animation: rise linear forwards;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .8;
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* MAIN PAGE */
+
+.page {
+    width: 92%;
+    max-width: 760px;
+
+    margin: 35px auto;
+
+    position: relative;
+    z-index: 5;
+}
+
+.card {
+    background: rgba(255,255,255,.94);
+
+    border-radius: 32px;
+
+    padding: 32px 25px 48px;
+
+    box-shadow:
+        0 25px 70px rgba(100,50,120,.20);
+
+    animation: pageIn 1s ease;
+}
+
+@keyframes pageIn {
+    from {
+        opacity: 0;
+        transform: translateY(45px) scale(.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+}
+
+.crown {
+    font-size: 48px;
+    animation: crown 2s infinite;
+}
+
+@keyframes crown {
+    50% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+}
+
+.small {
+    margin-top: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #b55b96;
+}
+
+h1 {
+    margin-top: 10px;
+
+    font-size: clamp(36px, 9vw, 60px);
+    line-height: 1.05;
+
+    color: #d14988;
+}
+
+.subtitle {
+    margin-top: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    color: #92708b;
+}
+
+
+/* VIDEO */
+
+.video-section {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.video-frame {
+    padding: 7px;
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff72b1,
+            #a96cf0,
+            #ffc2df
+        );
+
+    box-shadow:
+        0 18px 40px rgba(130,70,150,.25);
+
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow:
+            0 15px 30px rgba(255,100,170,.20);
+    }
+
+    to {
+        box-shadow:
+            0 15px 45px rgba(160,90,240,.40);
+    }
+}
+
+video {
+    display: block;
+
+    width: 100%;
+    max-height: 480px;
+
+    border-radius: 20px;
+
+    background: #211522;
+}
+
+.video-caption {
+    margin-top: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    color: #a16a96;
+}
+
+
+/* BIRTHDAY */
+
+.cake {
+    text-align: center;
+
+    font-size: 75px;
+
+    margin: 25px 0;
+
+    animation: cake 2s infinite;
+}
+
+@keyframes cake {
+    50% {
+        transform: translateY(-8px) rotate(3deg);
+    }
+}
+
+
+/* LETTER */
+
+.letter {
+    margin-top: 25px;
+}
+
+.greeting {
+    font-size: 26px;
+
+    color: #7b3e71;
+
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.highlight {
+    color: #d04487;
+    font-weight: bold;
+}
+
+.divider {
+    text-align: center;
+
+    margin: 30px 0;
+
+    color: #d46da5;
+
+    font-size: 23px;
+
+    letter-spacing: 8px;
+}
+
+
+/* BUTTONS */
+
+.interactive {
+    margin-top: 38px;
+}
+
+.interactive h2 {
+    text-align: center;
+
+    color: #a14b87;
+
+    margin-bottom: 18px;
+}
+
+.action {
+    margin-bottom: 14px;
+}
+
+.action button {
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #e85b9e,
+            #a66be9
+        );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(140,70,150,.18);
+
+    transition: .3s;
+}
+
+.action button:hover {
+    transform: translateY(-3px);
+}
+
+.action button:active {
+    transform: scale(.96);
+}
+
+
+/* HIDDEN MESSAGES */
+
+.message {
+    display: none;
+
+    margin-top: 10px;
+
+    padding: 20px;
+
+    background: #fff1f8;
+
+    border-left: 4px solid #dc6ba5;
+
+    border-radius: 15px;
+
+    animation: reveal .5s ease;
+}
+
+.message.show {
+    display: block;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* FINAL */
+
+.final {
+    margin-top: 42px;
+
+    padding-top: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #efd5e5;
+}
+
+.heart {
+    font-size: 52px;
+
+    animation: heartbeat 1.4s infinite;
+}
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.signature {
+    margin-top: 10px;
+
+    font-family: "Brush Script MT", cursive;
+
+    font-size: 30px;
+
+    color: #b04d8c;
+}
+
+
+/* LITTLE MOMENTS */
+
+.business {
+    margin-top: 45px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe0ed,
+            #e7dcff
+        );
+}
+
+.business-title {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #813e73;
+}
+
+.business-text {
+    margin-top: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.phone {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 11px 20px;
+
+    border-radius: 30px;
+
+    background: #c95091;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+}
+
+
+/* CONFETTI */
+
+.confetti {
+    position: fixed;
+
+    top: -30px;
+
+    z-index: 10000;
+
+    pointer-events: none;
+
+    animation: fall 4s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* POPUP */
+
+.popup {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 5000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    background:
+        rgba(70,30,70,.45);
+}
+
+.popup.show {
+    display: flex;
+}
+
+.popup-box {
+    width: 100%;
+    max-width: 410px;
+
+    padding: 35px 25px;
+
+    border-radius: 28px;
+
+    background: white;
+
+    text-align: center;
+
+    animation: popup .5s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(.6);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popup-emoji {
+    font-size: 65px;
+}
+
+.popup-box h2 {
+    margin: 12px 0;
+
+    color: #ce4c8a;
+}
+
+.close-btn {
+    margin-top: 18px;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    background: #ce5794;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- OPENING -->
+
+<div id="opening">
+
+    <div class="open-content">
+
+        <div class="gift">
+            🎁
+        </div>
+
+        <h1>
+            A Birthday Surprise 💗
+        </h1>
+
+        <p>
+            Someone special made something for you...
+        </p>
+
+        <button
+            class="open-btn"
+            onclick="openBirthday()">
+
+            Open Your Surprise 💌
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="page">
+
+<div class="card">
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <div class="crown">
+        👑
+    </div>
+
+    <div class="small">
+        A special birthday message
+    </div>
+
+    <h1>
+        Happy Birthday,<br>
+        Big Sis! 🎂💗
+    </h1>
+
+    <div class="subtitle">
+        A little something made with lots of love 💌
+    </div>
+
+</div>
+
+
+<!-- VIDEO -->
+
+<div class="video-section">
+
+    <div class="video-frame">
+
+        <video
+            controls
+            playsinline>
+
+            <source
+                src="Birthday-video.mp4"
+                type="video/mp4">
+
+            Your browser does not support this video.
+
+        </video>
+
+    </div>
+
+    <div class="video-caption">
+        A little birthday memory just for you 💗✨
+    </div>
+
+</div>
+
+
+<!-- CAKE -->
+
+<div class="cake">
+    🎂🎈
+</div>
+
+
+<!-- LETTER -->
+
+<div class="letter">
+
+    <div class="greeting">
+        Dear Big Sis, 💗
+    </div>
+
+    <p>
+        Happy birthday to one of the most amazing people
+        I could ever ask to have in my life. 🥹💕
+    </p>
+
+    <p>
+        I honestly don't say it enough, but I want you to
+        know just how much you mean to me.
+    </p>
+
+    <p>
+        You're not just my big sister. You're someone I can
+        look up to, someone I can learn from, someone who
+        cares about me and someone who has always felt like
+        <span class="highlight">
+            a second mother to me.
+        </span>
+    </p>
+
+    <p>
+        Seeing you grow, chase your dreams and continue your
+        journey through university makes me really proud
+        of you. 🎓✨
+    </p>
+
+    <div class="divider">
+        ✦ 💗 ✦
+    </div>
+
+    <p>
+        I hope this new chapter of your life brings you
+        happiness, peace, success and countless beautiful
+        memories.
+    </p>
+
+    <p>
+        I hope every challenge makes you stronger, every
+        beautiful moment gives you something to smile about,
+        and every dream you're working towards gets closer
+        to becoming reality. 🌷
+    </p>
+
+    <p>
+        No matter how busy university gets or where life
+        takes you, never forget that you have people who
+        love you and are always cheering for you.
+    </p>
+
+    <p>
+        And I'll always be one of them. ❤️
+    </p>
+
+    <p>
+        Today isn't about assignments, stress or anything
+        else. Today is about celebrating
+        <span class="highlight">YOU.</span>
+        🎉
+    </p>
+
+    <p>
+        So smile as much as possible, enjoy your day,
+        take pictures, make beautiful memories and
+        definitely eat some birthday cake! 😂🎂
+    </p>
+
+    <p>
+        You deserve a beautiful birthday and an even more
+        beautiful year ahead.
+    </p>
+
+    <p>
+        Happy birthday once again, Big Sis. 💗
+        May this new chapter be one of your best yet. ✨
+    </p>
+
+</div>
+
+
+<!-- INTERACTIVE -->
+
+<div class="interactive">
+
+    <h2>
+        💌 Open A Few Little Messages
+    </h2>
+
+
+    <div class="action">
+
+        <button
+            onclick="toggleMessage('one')">
+
+            💗 A little reminder
+
+        </button>
+
+        <div
+            id="one"
+            class="message">
+
+            <p>
+                Never forget how amazing you are.
+                Keep believing in yourself and keep
+                chasing the things that make you happy. 🌸
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="action">
+
+        <button
+            onclick="toggleMessage('two')">
+
+            🌷 Something special
+
+        </button>
+
+        <div
+            id="two"
+            class="message">
+
+            <p>
+                No matter how far life takes you,
+                you'll always have a little sister who
+                looks up to you and wants the absolute
+                best for you. 💕
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="action">
+
+        <button
+            onclick="toggleMessage('three')">
+
+            ✨ One last message
+
+        </button>
+
+        <div
+            id="three"
+            class="message">
+
+            <p>
+                You deserve happiness, beautiful memories
+                and people who appreciate the wonderful
+                person you are. Never forget that. 💖
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="action">
+
+        <button onclick="birthdayMagic()">
+
+            🎉🎈 BIRTHDAY MAGIC 🎈🎉
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- FINAL -->
+
+<div class="final">
+
+    <div class="heart">
+        💗
+    </div>
+
+    <p>
+        Happy Birthday, Big Sis! 🎂
+    </p>
+
+    <p>
+        Keep shining. Keep smiling.
+        Keep being amazing. ✨
+    </p>
+
+    <div class="signature">
+        With lots of love 💕
+    </div>
+
+</div>
+
+
+<!-- LITTLE MOMENTS -->
+
+<div class="business">
+
+    <div class="business-title">
+        Made with ❤️ by Little Moments
+    </div>
+
+    <div class="business-text">
+        Want a beautiful surprise like this
+        for someone special?
+        <br>
+        DM to get yours now 💌
+    </div>
+
+    <a
+        class="phone"
+        href="tel:08038344770">
+
+        📞 08038344770
+
+    </a>
+
+</div>
+
+
+</div>
+</div>
+
+
+<!-- POPUP -->
+
+<div
+    id="popup"
+    class="popup">
+
+    <div class="popup-box">
+
+        <div class="popup-emoji">
+            🎉🎈💗
+        </div>
+
+        <h2>
+            HAPPY BIRTHDAY! 🥳
+        </h2>
+
+        <p>
+            May your day be filled with love,
+            laughter, beautiful memories and
+            everything that makes you smile. 💕
+        </p>
+
+        <button
+            class="close-btn"
+            onclick="closePopup()">
+
+            Aww 💗
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* OPEN */
+
+function openBirthday() {
+
+    const opening =
+        document.getElementById("opening");
+
+    opening.style.opacity = "0";
+
+    setTimeout(function() {
+
+        opening.style.display = "none";
+
+        birthdayMagic();
+
+    }, 800);
+
+}
+
+
+/* MESSAGES */
+
+function toggleMessage(id) {
+
+    const message =
+        document.getElementById(id);
+
+    message.classList.toggle("show");
+
+}
+
+
+/* CONFETTI */
+
+function birthdayMagic() {
+
+    const emojis = [
+        "🎈",
+        "🎉",
+        "💗",
+        "💕",
+        "💖",
+        "✨",
+        "🌸",
+        "🌷",
+        "🎀",
+        "🥳",
+        "⭐"
+    ];
+
+    for (
+        let i = 0;
+        i < 120;
+        i++
+    ) {
+
+        const piece =
+            document.createElement("div");
+
+        piece.className =
+            "confetti";
+
+        piece.textContent =
+            emojis[
+                Math.floor(
+                    Math.random() *
+                    emojis.length
+                )
+            ];
+
+        piece.style.left =
+            Math.random() * 100 + "vw";
+
+        piece.style.fontSize =
+            (12 + Math.random() * 22) + "px";
+
+        piece.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+        document.body.appendChild(piece);
+
+        setTimeout(function() {
+
+            piece.remove();
+
+        }, 5500);
+
+    }
+
+    document
+        .getElementById("popup")
+        .classList.add("show");
+
+}
+
+
+/* CLOSE POPUP */
+
+function closePopup() {
+
+    document
+        .getElementById("popup")
+        .classList.remove("show");
+
+}
+
+
+/* FLOATING HEARTS */
+
+function createFloating() {
+
+    const item =
+        document.createElement("div");
+
+    item.className =
+        "floating";
+
+    item.textContent =
+        [
+            "💗",
+            "💕",
+            "💖",
+            "✨",
+            "🌸",
+            "🌷",
+            "🎀"
+        ][
+            Math.floor(
+                Math.random() * 7
+            )
+        ];
+
+    item.style.left =
+        Math.random() * 100 + "vw";
+
+    item.style.fontSize =
+        (14 + Math.random() * 20) + "px";
+
+    item.style.animationDuration =
+        (6 + Math.random() * 7) + "s";
+
+    document.body.appendChild(item);
+
+    setTimeout(function() {
+
+        item.remove();
+
+    }, 14000);
+
+}
+
+setInterval(
+    createFloating,
+    900
+);
+
+</script>
+
+</body>
+</html>
